@@ -7,13 +7,13 @@
 
 while true do
 	if redstone.getInput("right") then
-		-- fuel rod requested 
-		-- briefly enable translocator 
+		print("Fuel rod requested")
+		print("Briefly enable translocator")
 		redstone.setOutput("left", true)
 		sleep(2)
 		redstone.setOutput("left", false)
 		sleep(1)
-		-- briefly enable redstone engine 
+		 print("Briefly enable redstone engine") 
 		redstone.setOutput("front", false) 
 		sleep(10)
 		redstone.setOutput("front", true)
